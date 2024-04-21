@@ -1,5 +1,5 @@
 # DEX Specs: A Mean-Field Approach to Decentralized Cryptocurrency Exchanges
-This Github repository is published as a companion to the paper [DEX Specs: A Mean-Field Approach to Decentralized Cryptocurrency Exchanges](blank) by Erhan Bayraktar, Asaf Cohen, and April Nellis.
+This Github repository is published as a companion to the paper [DEX Specs: A Mean-Field Approach to Decentralized Cryptocurrency Exchanges](https://arxiv.org/abs/2404.09090) by Erhan Bayraktar, Asaf Cohen, and April Nellis.
 
 Owner: April Nellis (nellisa@umich.edu)
 
