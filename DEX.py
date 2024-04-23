@@ -415,6 +415,7 @@ class Pool:
     def setER(self, rate):
         self.pool_er = rate
         self.idx = self.findIndex(rate)
+        self.setABTicks()
 
     def setMktER(self, rate):
         self.mkt_er = rate
@@ -705,10 +706,12 @@ class Pool:
     def manualLiqSet(self, idx, qA, qB):
         self.tokA[idx] += qA
         self.tokB[idx] += qB
+        self.setABTicks()
 
     def manualLiqSetAll(self, qAlist, qBlist):
         self.tokA = np.array(qAlist)
         self.tokB = np.array(qBlist)
+        self.setABTicks()
 
     def resetLiquidity(self, l, p_star):
         self.resetProfit()

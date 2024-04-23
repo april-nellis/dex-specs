@@ -537,7 +537,6 @@ def calibrateAgents(nu, zeta, myT, myM, agent_weights = None, fees_in = None, lo
         fees = fees_in
     start = time.time()
     lambda_list = np.concatenate([np.linspace(0, 0.09, 10), np.linspace(0.1, 1.9, 19), np.arange(2, 6, 0.5)])
-    #capital_list = np.array([2682, 17575, 232995]) #np.array([1e3, 1e4, 1e5])
     my_dict = np.zeros((len(lambda_list)*3*len(capital_list) + 1, 5)) # 5D = [position_lower, position_upper, k lambda, belief]
     my_dict[0] = np.array([0,nu.size,5e4, -1, 0])
     count = 1
